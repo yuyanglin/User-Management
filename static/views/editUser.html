@@ -1,0 +1,38 @@
+<!-- Here is the New compose form, Only show when the Edit or Create new user clicked -->
+
+<div class="w3-container">
+    
+    <h3>Please Edit Your Information In The Following Field!!!</h3>
+
+    <form action="#">
+        <h3 ng-show="edit">Create New User:</h3>
+        <h3 ng-hide="edit">Edit User:</h3>
+        <label>First Name:</label>
+        <input class="w3-input w3-border" type="text" ng-model="fName" ng-disabled="!edit" placeholder="First Name">
+        <br>
+        <label>Last Name:</label>
+        <input class="w3-input w3-border" type="text" ng-model="lName" ng-disabled="!edit" placeholder="Last Name">
+        <br>
+        <label>Title:</label>
+        <input class="w3-input w3-border" type="text" ng-model="title" ng-disabled="!edit" placeholder="Title">
+        <br>
+        <label>Sex:</label>
+        <input class="w3-input w3-border" type="text" ng-model="sex" ng-disabled="!edit" placeholder="Sex">
+        <br>
+        <label>Age:</label>
+        <input class="w3-input w3-border" type="number" ng-model="age" ng-disabled="!edit" placeholder="Age">
+        <br>
+        <label>Password:</label>
+        <input class="w3-input w3-border" type="password" ng-model="passw1" placeholder="Password">
+        <br>
+        <label>Repeat:</label>
+        <input class="w3-input w3-border" type="password" ng-model="passw2" placeholder="Repeat Password">
+        <br>
+        
+        <button class="w3-btn w3-green w3-ripple" ng-disabled="error || incomplete" ng-click="addUser()">&#10004; Save Changes</button>
+        <form action="#">
+            <button class="w3-btn w3-green w3-ripple">Home Page</button>
+        </form>
+
+    </form>
+</div>

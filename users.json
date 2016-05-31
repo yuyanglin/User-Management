@@ -1,0 +1,129 @@
+{
+        id: 1,
+        fName: 'Hege',
+        lName: "Pege",
+        title : "Head Engineer",
+        sex : "male",
+        age : 39
+
+    }
+     {
+        id: 2,
+        fName: 'Kim',
+        lName: "Pim",
+        title : "Development Engineer",
+        sex : "male",
+        age : 30
+    }
+     {
+        id: 3,
+        fName: 'Sal',
+        lName: "Smith",
+        title : "Test Engineer",
+        sex : "female",
+        age : 26
+    }
+     {
+        id: 4,
+        fName: 'Jack',
+        lName: "Jones",
+        title : "Web Engineer",
+        sex : "male",
+        age : 32
+    }
+     {
+        id: 5,
+        fName: 'John',
+        lName: "Doe",
+        title : "Web Engineer",
+        sex : "male",
+        age : 30
+    }
+     {
+        id: 6,
+        fName: 'Peter',
+        lName: "Pan",
+        title : "Head Engineer",
+        sex : "male",
+        age : 28
+    }
+     {
+        id: 7,
+        fName: 'Kevin',
+        lName: "Lin",
+        title : "Development Engineer",
+        sex : "male",
+        age : 34
+    }
+     {
+        id: 8,
+        fName: 'Amy',
+        lName: "Smith",
+        title : "Test Engineer",
+        sex : "female",
+        age : 26
+    }
+     {
+        id: 9,
+        fName: 'Andrew',
+        lName: "Jones",
+        title : "Web Engineer",
+        sex : "male",
+        age : 32
+    }
+     {
+        id: 10,
+        fName: 'Tiffany',
+        lName: "Trump",
+        title : "CMO",
+        sex : "female",
+        age : 36
+    }
+     {
+        id: 11,
+        fName: 'Marry',
+        lName: "Pan",
+        title : "CFO",
+        sex : "female",
+        age : 35
+    }
+     {
+        id: 12,
+        fName: 'Gandalf',
+        lName: "Gray",
+        title : "CEO",
+        sex : "male",
+        age : 38
+    }
+     {
+        id: 13,
+        fName: 'Jane',
+        lName: "Smith",
+        title : "Test Engineer",
+        sex : "female",
+        age : 29
+    }
+     {
+        id: 14,
+        fName: 'Jacky',
+        lName: "Jones",
+        title : "Project Engineer",
+        sex : "male",
+        age : 31
+    }
+     {
+        id: 15,
+        fName: 'Jenny',
+        lName: "Doe",
+        title : "Application Engineer",
+        sex : "female",
+        age : 29
+    }
+     {
+        id: 16,
+        fName: 'David',
+        lName: "Jobs",
+        title : "Full Stack Engineer",
+        sex : "male",
+        age : 24
+    }

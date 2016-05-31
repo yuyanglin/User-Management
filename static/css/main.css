@@ -1,0 +1,34 @@
+.page-list {
+	list-style: none;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.page-list li {
+	display: inline-block;
+}
+
+.page-list li a {
+	text-decoration: none;
+	padding: 10px;
+	color: green;
+	border: 1px solid black;
+}
+
+.page-list .current-page {
+	background-color: yellow;
+	font-size : 20px;
+}
+
+.curr-page {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: #660099;
+	font-weight: bold;
+}
+
+.page-list .page-number-holder .page-number {
+	color: blue;
+	background-color: yellow;
+}

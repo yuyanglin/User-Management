@@ -1,0 +1,70 @@
+<!--  This is the display table  -->
+        
+<div class="w3-container">
+
+    <h3>Users List</h3>
+        <form>
+            Search: <input type="text" ng-model="searchInput" placeholder="Start Search"></input>
+        </form>
+    
+        <table class="w3-table w3-bordered w3-striped">
+            <tr>
+                <th>Edit</th>
+                <th ng-click="sortField = 'id'; reverseSort = !reverseSort" class="hvr-fade">User ID</th>
+                <th ng-click="sortField = 'fName'; reverseSort = !reverseSort" class="hvr-fade">First Name</th>
+                <th ng-click="sortField = 'lName'; reverseSort = !reverseSort" class="hvr-fade">Last Name</th>
+                <th ng-click="sortField = 'title'; reverseSort = !reverseSort" class="hvr-fade">Title</th>
+                <th ng-click="sortField = 'sex'; reverseSort = !reverseSort" class="hvr-fade">Sex</th>
+                <th ng-click="sortField = 'age'; reverseSort = !reverseSort" class="hvr-fade">Age</th>
+            </tr>
+            <tr ng-repeat="user in users | orderBy:sortField:reverseSort | filter : searchInput | limitTo : pageSize : startIdx">
+                <td>
+                    <form action="#edituser">
+                        <button type="submit" class="w3-btn w3-ripple" ng-click="setId(user.id)">&#9998; Edit</button>
+                    </form>
+                </td>
+                <td>{{ user.id }}</td>
+                <td>{{ user.fName }}</td>
+                <td>{{ user.lName }}</td>
+                <td>{{ user.title }}</td>
+                <td>{{ user.sex }}</td>
+                <td>{{ user.age }}</td>
+                <td>
+                    <button class="w3-btn w3-ripple" ng-click="deleteUser(user.id)">&#215; Delete</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <form action="#newuser">
+            <button class="w3-btn w3-green w3-ripple">&#9998; Create New User</button>
+        </form>
+
+    <!--  This is the Pager  -->
+    <div>
+        <p class="curr-page">Current Page : {{currentPage}}</p>
+    </div>
+    
+    <ul class="page-list">
+        <li>
+            <a class="hvr-reveal" ng-click="updatePage(1)" ng-hide="currentPage == 1"><b>First</b></a>
+        </li>
+        
+        <li>
+            <a class="hvr-reveal" ng-click="updatePage(currentPage - 1)" ng-hide="currentPage == 1"><b>Previous</b></a>
+        </li>
+
+        <li ng-repeat="pageNum in pageNumArray" class="page-number-holder">
+            <a class="hvr-reveal" ng-click="updatePage(pageNum)" ng-class="{'page-number': pageNum === currentPage}"><b>{{ pageNum }}</b></a>
+        </li>
+
+        <li>
+            <a class="hvr-reveal" ng-click="updatePage(currentPage + 1)" ng-hide="currentPage == pageNumArray.length"><b>Next</b></a>
+        </li>
+        
+        <li>
+            <a class="hvr-reveal" ng-click="updatePage(pageNumbers)" ng-hide="currentPage == pageNumArray.length"><b>Last</b></a>
+        </li>
+    </ul>
+
+</div>
